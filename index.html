@@ -24,13 +24,17 @@
 
     <h2>Comandos para trabajar con repositorios remotos</h2>
 
-    <ul>
+    <ul id="lista-2-comandos">
         <li>git remote add origin url</li>
         <li>git push -u origin master</li>
         <li>git pull</li>
         <li>git clone url</li>
     </ul>
-
+    <script>
+        let lista = document.getElementById("lista-2-comandos");
+        for (let i=1 ; i++ ; i<=100){
+            lista.innerHTML = `<li>Comando de git ${i}</li`;
+        }
+    </script>
 </body>
-
 </html>
